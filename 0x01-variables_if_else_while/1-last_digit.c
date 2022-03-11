@@ -22,10 +22,10 @@ int main(void)
 	}
 	else if (new == 0)
 	{
-		printf("Last digit of %d 0 and is 0\n", n);
+		printf("Last digit of %d is 0 and is 0\n", n);
 	}
 	else
-		printf("Last digit pf %d is %d and is less than 6 and not 0\n", n, new);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, new);
 
 	return (0);
 }
