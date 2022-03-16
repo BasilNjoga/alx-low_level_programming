@@ -14,7 +14,7 @@ int main(void)
 	char nl;
 	int ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
-	for (int i = 0; i <= sizeof(ch); i++)
+	for (int i = 0; i <= 7 ; i++)
 	{
 	putchar(ch[i]);
 	}
