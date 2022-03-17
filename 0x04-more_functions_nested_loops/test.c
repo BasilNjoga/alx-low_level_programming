@@ -5,7 +5,7 @@
 
 int main(void)
 {
-	int _isdigit(4);	
+	int _isdigit(...4);	
 
 	return (0);
 }
