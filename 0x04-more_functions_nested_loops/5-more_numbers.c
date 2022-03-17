@@ -19,7 +19,7 @@ void more_numbers(void)
 	}
 	for (num = 48; num <= 52; num++)
 	{
-	newnum = num + 10 ;
+	newnum = (num + "10") ;
 	_putchar(newnum);
 	}
 	}
