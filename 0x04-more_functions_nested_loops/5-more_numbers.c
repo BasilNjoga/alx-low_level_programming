@@ -9,6 +9,7 @@
 void more_numbers(void)
 {
 	char num;
+	char newnum;
 
 	for (int i = 0; i <= 10; i++)
 	{
@@ -18,7 +19,8 @@ void more_numbers(void)
 	}
 	for (num = 48; num <= 52; num++)
 	{
-	_putchar(num + '10');
+	newnum = num + 10 ;
+	_putchar(newnum);
 	}
 	}
 	_putchar('\n');
