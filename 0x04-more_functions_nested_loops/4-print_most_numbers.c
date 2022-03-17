@@ -1,25 +1,22 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints almost all numbers minus 2 and 4
+ * print_numbers - prints all numbers
  *
  * Return: Always (0) - success
  */
 
-void print_most_numbers(void)
+void print_numbers(void)
 {
-	int num;
-	char ch;
+	char num;
 
-	for (num = 0; num <= 9; num++)
+	for (num = 48; num <= 57; num++)
 	{
-	if (num == 2 || num == 4)
+	if (num == 50 || num == 52)
 	{
 	continue;
 	}
 	_putchar(num);
 	}
-	ch = '\n';
-	_putchar (ch);
-	
+	_putchar('\n');
 }
