@@ -8,7 +8,7 @@
  * Return: Always 0 (success)
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
 	int num;
 	int c;
