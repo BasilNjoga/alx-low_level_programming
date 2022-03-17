@@ -11,8 +11,9 @@
 int _isupper(int c)
 {
 	int num;
+	int c;
 
-	for (num = 0;num <= 9; num++)
+	for (num = 0; num <= 9; num++)
 	{
 	if (c == num)
 	{
