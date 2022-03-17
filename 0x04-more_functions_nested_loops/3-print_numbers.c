@@ -6,14 +6,14 @@
  * Return: Always (0) - success
  */
 
-void print_most_numbers(void)
+void print_numbers(void)
 {
 	char num;
 	char ch;
 
 	for (num = 48; num <= 57; num++)
 	{
-	_putchar(num)
+	_putchar(num);
 	}
 	_putchar('\n');
 }
