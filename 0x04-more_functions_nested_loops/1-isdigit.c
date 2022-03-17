@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * _isupper - checks for uppercase letters
+ * _isdigit - checks if its a digit
  *
  * @c: contains value to be checked
  *
  * Return: Always 0 (success)
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
-	char ch;
+	int num;
 
-	for (ch = 'A'; ch <= 'Z'; ch++)
+	for (num = 0; num <= 9; num++)
 	{
-		if (c == ch)
+		if (c == num)
 		{
 		return (1);
 		}
