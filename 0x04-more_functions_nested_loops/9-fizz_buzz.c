@@ -3,8 +3,8 @@
 /*
  * main - entry point
  *
- * This program prints numbers from 1 to 100 substituting
- * multiples of 5 and 3 with words
+ * This program prints numbers from 1 to 100 substituting multiple *
+ * of 5 and 3 with words
  *
  * Return: Always (0) - success
  */
