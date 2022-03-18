@@ -5,7 +5,7 @@
  *
  * @n: number of times it prints
  *
- * Return: Always (0) - success
+ * Return: Always (0) - Success
  */
 
 void print_diagonal(int n)
