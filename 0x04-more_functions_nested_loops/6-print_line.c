@@ -3,7 +3,7 @@
 /**
  * print_line - prints a straigt line
  *
- * @n - number of times it prints
+ * @n: number of times it prints
  *
  * Return: Always (0) - success
  */
