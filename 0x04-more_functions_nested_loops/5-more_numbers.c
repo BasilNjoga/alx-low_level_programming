@@ -15,13 +15,11 @@ void more_numbers(void)
 	{
 	for (num = 48; num <= 57; num++)
 	{
+		if (num > 57)
+		{
+		_putchar(48)
+		}
 	_putchar(num);
-	}
-	for (num = 48; num <= 52; num++)
-	{
-	newnum = (num + "10") ;
-	_putchar(newnum);
-	}
 	}
 	_putchar('\n');
 }
