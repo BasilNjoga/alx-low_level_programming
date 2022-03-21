@@ -6,8 +6,6 @@
  *
  * strlen - gives the length of a string
  *
- * strrev - reverses a string
- *
  * @s: string to be reversed
  *
  * Return:  nothing
@@ -19,8 +17,7 @@ void print_rev(char *s)
 	int i;
 
 	len = strlen(s);
-	*s = strrev(s);
-	for (i = 0; i < len; i++)
+	for (i = len - 1; i >= 0; i--)
 	{
 	_putchar(s[i]);
 	}
