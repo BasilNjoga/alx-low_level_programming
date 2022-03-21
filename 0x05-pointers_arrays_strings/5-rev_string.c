@@ -4,7 +4,7 @@
 /**
  * rev_string - reverses a string
  *
- * strrev - reverses a string
+ * strlen - gives the lenght of the string
  *
  * @s: string to be reversed
  *
@@ -13,5 +13,15 @@
 
 void rev_string(char *s)
 {
-	strrev(s);
+	int len;
+	int i;
+	int n;
+
+	len = strlen(s);
+	n = len - 1;
+	for (i = 0; i < len; i++)
+	{
+	s[i] = s[n];
+	n--;
+	}
 }
