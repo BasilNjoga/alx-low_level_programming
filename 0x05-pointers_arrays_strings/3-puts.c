@@ -6,7 +6,7 @@
  *
  * strlen - gives the length of the string
  *
- * @str - string to be printed
+ * @str: string to be printed
  *
  * Return: nothing
  */
