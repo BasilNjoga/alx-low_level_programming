@@ -2,7 +2,9 @@
 #include "string.h"
 
 /**
- * strlen - returns the length
+ * _strlen - returns the length
+ *
+ * strlen - gives the length of string
  *
  * @s: string to be measured
  *
