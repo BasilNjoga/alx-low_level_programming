@@ -23,10 +23,21 @@ char *_strncat(char *dest, char *src, int n)
 
 	len = strlen(dest);
 	k = 0;
+	if (dest[len] == '\0')
+	{
 	for (i = len; i < (len + n); i++)
 	{
 	dest[i] =  src[k];
 	k++;
+	}
+	}
+	else
+	{
+	for (i = len + 1; i < (len + 1 + n); i++)
+	{
+	dest[i] = src[k];
+	k++;
+	}
 	}
 	return (dest);
 }
