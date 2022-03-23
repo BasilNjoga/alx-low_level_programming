@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy: copies a string
+ * *_strncpy -  copies a string onto another
  *
  * @dest: first string
  *
@@ -9,7 +9,7 @@
  *
  * @n: integer to be copied
  *
- * return: Always 0 - success
+ * Return: always 0
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -23,5 +23,5 @@ char *_strncpy(char *dest, char *src, int n)
 	dest[i] = src[k];
 	k++;
 	}
-	return dest;
+	return (dest);
 }
