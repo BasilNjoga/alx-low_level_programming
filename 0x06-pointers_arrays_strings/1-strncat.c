@@ -2,30 +2,31 @@
 #include <string.h>
 
 /**
- * _strncat - concatenates two strings
+ * *_strncat - concatenates two strings
+ *
+ * strlen - gives the lenght of a string
  *
  * @dest: first string
  *
  * @src: second string
  *
- * @n: number of bytes
- *
- * Return: Always 0
+ * Return: Always 0 - success
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src)
 {
 	int len, len2;
 	int i;
-	int k;
+	int n;
 
 	len = strlen(dest);
 	len2 = strlen(src);
-	k = 0;
-	for (i = len; i < len + n; i++)
+	n = 0;
+	for (i = len; i < len + len2; i++)
 	{
-	dest[i] = src[k];
-	k++;
+	dest[i] =  src[n];
+	n++;
 	}
+
 	return (dest);
 }
