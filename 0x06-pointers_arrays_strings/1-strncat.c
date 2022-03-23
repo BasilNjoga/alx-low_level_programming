@@ -10,22 +10,23 @@
  *
  * @src: second string
  *
+ * @n: number of bytes
+ *
  * Return: Always 0 - success
  */
 
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	int len, len2;
+	int len;
 	int i;
-	int n;
+	int k;
 
 	len = strlen(dest);
-	len2 = strlen(src);
-	n = 0;
-	for (i = len; i < len + len2; i++)
+	k = 0;
+	for (i = len; i < len + n; i++)
 	{
 	dest[i] =  src[n];
-	n++;
+	k++;
 	}
 
 	return (dest);
