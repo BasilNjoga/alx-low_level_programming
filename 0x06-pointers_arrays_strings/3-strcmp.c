@@ -3,6 +3,8 @@
 /**
  * _strcmp - compares two strings
  *
+ * strlen - gives the length of the string
+ *
  * @s1: first string
  *
  * @s2: second string
