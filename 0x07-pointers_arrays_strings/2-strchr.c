@@ -16,16 +16,5 @@ char *_strchr(char *s, char c)
 	int len;
 
 	len = strlen(s);
-	for (i = 0; i < len; i++)
-	{
-	if (s[i] == c)
-	{
-	s = &s[i];
 	return (s);
-	}
-	else
-	{
-	return (NULL);
-	}
-	}
 }
