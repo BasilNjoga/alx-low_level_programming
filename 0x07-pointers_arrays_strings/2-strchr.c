@@ -15,6 +15,6 @@ char *_strchr(char *s, char c)
 	int i;
 	int len;
 
-	len = strlen(s);
+	//len = strlen(s);
 	return (s);
 }
