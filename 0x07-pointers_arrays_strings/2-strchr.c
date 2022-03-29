@@ -18,7 +18,7 @@ char *_strchr(char *s, char c)
 	len = strlen(s);
 	for (i = 0; i < len; i++)
 	{
-/*	if (s[i] == c)
+	if (s[i] == c)
 	{
 	s = &s[i];
 	return (s);
@@ -26,7 +26,6 @@ char *_strchr(char *s, char c)
 	else
 	{
 	return (NULL);
-	}*/
-	return (0);
+	}
 	}
 }
