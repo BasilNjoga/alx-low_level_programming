@@ -3,8 +3,7 @@
 /**
  * _strlen_recursion - gives the length of a string
  *
- * @s: string 
- *
+ * @s:string
  * Return: Nothing
  */
 
