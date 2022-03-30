@@ -20,6 +20,6 @@ void _print_rev_recursion(char *s)
 	return;
 	}
 	_putchar(s[len]);
-	s[len] = '\0';
+	s[len] = '0';
 	_print_rev_recursion(s);
 }
