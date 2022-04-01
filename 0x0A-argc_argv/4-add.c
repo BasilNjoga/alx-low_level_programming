@@ -14,34 +14,23 @@
  * Return: always 0
  */
 
-int *summer(char **s);
-
 int main(int argc, char *argv[])
 {
-	int num1, num2;
-	
+	int sum, int i;
+
 	if (argc < 2)
 	{
 	printf("0\n");
 	}
 	else
 	{
-	printf("%d\n",summer(argv));
-	}
-	return (0);
-}
-
-int summer(char **s)
-{
-	int i, len;
-	int sum ;
-
 	sum = 0;
-	len = strlen(s);
-	for (i = 0; i < len; i++)
+	for (i = 0; i < argc; i++)
 	{
-	s[i] = atoi(s[i]);
-	sum = sum + s[i];
+	sum = sum + atoi(argv[i]);
 	}
-	return (sum);
+	printf("%d\n", sum);
+	}
+
+	return (0);
 }
