@@ -6,13 +6,14 @@
  * main - entry point
  *
  * This program prints out the number of arguments
- *@argc: character count
- *@argv: array of characters
+ *
+ * @argc: character count
+ * @argv: array of characters
  *
  * Return: always 0
  */
 
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	UNUSED(argv);
 	printf("%d\n", argc);
