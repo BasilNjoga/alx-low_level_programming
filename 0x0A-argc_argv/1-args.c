@@ -18,9 +18,11 @@ int main(int argc, char *argv[])
 	int i;
 
 	UNUSED(argv);
-	for (i = 0; i < argc; i++)
+	i = 0;
+	while (i < argc - 1)
 	{
-	printf("%d\n", i);
+	++i;
 	}
+	printf("%d\n", i);
 	return (0);
 }
