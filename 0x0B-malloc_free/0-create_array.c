@@ -8,7 +8,7 @@
  * @size: size of array used
  * @c: character declared
  *
- * Return : always 0
+ * Return: always 0
  */
 
 char *create_array(unsigned int size, char c)
@@ -23,7 +23,7 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 	str = malloc(sizeof(char) * size);
-	for ( i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		str[i] = c;
 	}
