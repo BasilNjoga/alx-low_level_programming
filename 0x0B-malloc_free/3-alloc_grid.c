@@ -29,6 +29,7 @@ int **alloc_grid(int width,int height)
 	if (grid == NULL)
 	{
 	return (NULL);
+	printf("ssupp");
 	}
 	for (j = 0; j < width; j++)
 	{
