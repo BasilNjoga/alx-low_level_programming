@@ -19,18 +19,7 @@ int **alloc_grid(int width,int height)
 	int product;
 
 	product = width * height;
-	if (width == 0 || height == 0)
-	{
-	return (NULL);
-	}
-	else
-	{
-	grid = malloc(sizeof(int) * product);
-	if (grid == NULL)
-	{
-	return (NULL);
-	printf("ssupp");
-	}
+	grid = malloc(sizeof(int) * width * height);
 	for (j = 0; j < width; j++)
 	{
 		for (i = 0; i < height; i++)
@@ -39,5 +28,4 @@ int **alloc_grid(int width,int height)
 		}
 	}
 	return (grid);
-	}
 }
