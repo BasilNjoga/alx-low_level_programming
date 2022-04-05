@@ -14,7 +14,7 @@
 
 int **alloc_grid(int width,int height)
 {
-	int **grid;
+	int grid[][];
 	int i, j;
 	
 	printf("%d", width * height);
