@@ -16,9 +16,8 @@ int **alloc_grid(int width,int height)
 {
 	int **grid;
 	int i, j;
-	int product;
-
-	product = width * height;
+	
+	printf("%d", width * height);
 	grid = malloc(sizeof(int) * width * height);
 	for (j = 0; j < width; j++)
 	{
