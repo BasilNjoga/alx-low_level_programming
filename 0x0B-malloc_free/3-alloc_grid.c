@@ -14,11 +14,10 @@
 
 int **alloc_grid(int width,int height)
 {
-	int grid[][];
+	int **grid;
 	int i, j;
 	
 	printf("%d", width * height);
-	grid = malloc(sizeof(int) * width * height);
 	for (j = 0; j < width; j++)
 	{
 		for (i = 0; i < height; i++)
