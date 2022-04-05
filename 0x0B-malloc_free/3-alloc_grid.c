@@ -17,6 +17,6 @@ int **alloc_grid(int width,int height)
 	int **grid;
 	
 	printf("%d", width * height);
-	grid = malloc(sizeof(int) * (width + 1) * (height + 1));
+	grid = malloc(sizeof(int) * (width) * (height + 1));
 	return (grid);
 }
