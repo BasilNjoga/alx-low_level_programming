@@ -18,6 +18,6 @@ int **alloc_grid(int width,int height)
 	int product;
 
 	product = width * height + 1;
-	grid = malloc(sizeof(int) * (product);
+	grid = malloc(sizeof(int) * product);
 	return (grid);
 }
