@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * struct dog - gives dog details
  *
