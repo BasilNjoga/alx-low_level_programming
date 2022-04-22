@@ -11,13 +11,13 @@
 
 size_t print_list(const list_t *h)
 {
-	list_t *tmp;
-	size_t count;
-
-	for (count = 0; h->next != NULL; count++)
+	while (h->next != null)
 	{
-	tmp = h;
+	printf("%s", h->str);
+	printf("%d", h->len);
+	h = &h->next;
 	}
-	return (count);
+
+	return (0);
 	
 }
