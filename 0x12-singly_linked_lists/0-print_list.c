@@ -11,6 +11,13 @@
 
 size_t print_list(const list_t *h)
 {
-	return (0);
+	list_t *tmp;
+	size_t count;
+
+	for (count = 0; h->next != NULL; count++)
+	{
+	tmp = h;
+	}
+	return (count);
 	
 }
