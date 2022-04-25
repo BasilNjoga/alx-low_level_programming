@@ -11,11 +11,18 @@
 
 size_t print_list(const list_t *h)
 {
-	while (h->next != null)
+	list_t trav;
+	
+	if (h->str == NULL)
 	{
-	printf("%s", h->str);
-	printf("%d", h->len);
-	h = &h->next;
+	printf("0");
+	}
+	trav = h;
+	while (trav != null)
+	{
+	printf("%s", trav->str);
+	printf("%d", trav->len);
+	trav = h->next;
 	}
 
 	return (0);
