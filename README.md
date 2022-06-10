@@ -1,1 +1,1 @@
-This is an exercise on bit manipulation
+The following are my basic projects on low level programming in c
