@@ -15,8 +15,8 @@ size_t dlistint_len(const dlistint_t *h)
 {
     const dlistint_t *counter;
 	size_t i = 0;
-
 	counter = h;
+
 	while(counter != NULL)
 	{
         printf("%d \n", counter->n);
