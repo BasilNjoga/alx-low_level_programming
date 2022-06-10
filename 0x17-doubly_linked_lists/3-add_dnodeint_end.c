@@ -4,19 +4,25 @@
 #include "lists.h"
 
 /**
- * print_dlisting - this function prints all elements of a singly linked list
+ * add_dnodeint - this function adds a node to the end of a list
  *
  * @h: pointer to a list
  *
  * Return: nothing
  */
 
-dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
     dlistint_t *counter;
 	counter = head;
-    counter->next = head;
-    counter->prev = NULL;
+
+    while (counter->next != NULL)
+    {
+        counter = counter->next;
+    }
+    counter->next = (dlistint_t *) malloc(sizeof(dlistint_t));
+    counter->next->n = n;
+    counter->next->next = NULL;
 	return(&counter);
 }
 
