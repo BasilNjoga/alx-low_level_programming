@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - this function adds a node to the end of a list
+ * add_dnodeint_end - this function adds a node to the end of a list
  *
  * @h: pointer to a list
  *
@@ -14,15 +14,17 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
     dlistint_t *counter;
-	counter = head;
+    dlistint_t *new_node;
 
+    new_node = (dlistint_t *) malloc(sizeof(dlistint_t));
+    new_node->next , new_node->prev = 0;
+	counter = *head;
     while (counter->next != NULL)
     {
         counter = counter->next;
     }
-    counter->next = (dlistint_t *) malloc(sizeof(dlistint_t));
+    counter->next = new_node;
     counter->next->n = n;
-    counter->next->next = NULL;
-	return(&counter);
+	return(new_node);
 }
 
