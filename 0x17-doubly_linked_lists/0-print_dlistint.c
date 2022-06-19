@@ -12,8 +12,8 @@ size_t print_dlistint(const dlistint_t *h)
 {
 	const dlistint_t *counter;
 	size_t i = 0;
-	counter = h;
 
+	counter = h;
 	while(counter != NULL)
 	{
 		i++;
