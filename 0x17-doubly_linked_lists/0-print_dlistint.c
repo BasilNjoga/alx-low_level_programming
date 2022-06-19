@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlisting - this function prints all elements of a singly linked list
+ * print_dlistint - this function prints all elements of a singly linked list
  *
  * @h: pointer to a list
  *
