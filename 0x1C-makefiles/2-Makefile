@@ -1,0 +1,16 @@
+# variable cc will be the compiler to use
+CC=gcc
+
+# the .c files to be executed
+SRC=main.c school.c
+
+#the name of the executable
+NAME=school
+
+#the .o object files
+OBJ=*.o
+
+all:school
+
+school: main.c school.c
+	$(CC) $(SRC) -o school 
