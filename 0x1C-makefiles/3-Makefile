@@ -12,9 +12,9 @@ $(NAME): $(OBJ)
 clean:
 	$(RM) $(NAME)
 oclean:
-	$(RM) *.o
+	$(RM) $(OBJ)
 
 fclean:
-	$(RM) *.o $(NAME)
+	$(RM) $(OBJ) $(NAME)
 
 re: $(NAME)
