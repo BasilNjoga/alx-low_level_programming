@@ -1,0 +1,12 @@
+all: program
+
+program: main.o school.o
+	gcc main.o school.o -o program
+
+main.o: main.c
+	gcc -c main.c -o main.o
+
+school.o: school.c
+	gcc -c school.c -o school.o
+clean:
+	rm -f *.o program

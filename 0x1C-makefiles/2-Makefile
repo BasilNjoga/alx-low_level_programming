@@ -10,9 +10,9 @@ NAME=school
 #the .o object files
 OBJ=*.o
 
-all:school
+all: school
 
-school: main.c school.c
+school: main.o school.o
 	$(CC) $(SRC) $(OBJ) -o school
 
 
