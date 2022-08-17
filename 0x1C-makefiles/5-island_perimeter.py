@@ -5,8 +5,7 @@
 def island_perimeter(grid):
     """ This is the function that loops throught the matrix list """
     x = 0
-    for i in range(grid):
-        for j in range(grid[i]):
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
             x += grid[i][j]
-
     return x * 2
