@@ -1,7 +1,8 @@
-all: program
+NAME=program
+all: $(NAME)
 
 program: main.o school.o
-	gcc main.o school.o -o program
+	gcc main.o school.o -o $(NAME)
 
 main.o: main.c
 	gcc -c main.c -o main.o

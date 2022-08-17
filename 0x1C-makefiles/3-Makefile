@@ -1,0 +1,18 @@
+CC=gcc
+SRC=*.c
+OBJ=*.o
+all: school
+
+school: $(OBJ)
+	$(CC) $(OBJ) -o school
+
+clean:
+	rm -f school
+
+oclean:
+	rm -f *.o
+
+fclean:
+	rm -f school *.o
+
+re: school
