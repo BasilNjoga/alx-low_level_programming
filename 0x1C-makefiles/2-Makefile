@@ -1,23 +1,10 @@
-# variable cc will be the compiler to use
 CC=gcc
-
-# the .c files to be executed
-SRC=main.c school.c
-
-#the name of the executable
-NAME=school
-
-#the .o object files
+SRC=*.c
 OBJ=*.o
-
 all: school
 
-school: main.o school.o
-	$(CC) $(SRC) $(OBJ) -o school
+school: main.c school.c
+	$(CC) $(SRC) -o school
 
-
-main.o: main.c
-	gcc -c main.c -o main.o
-
-school.o: school.c
-	gcc -c school.c -o schoo.o
+clean:
+	rm -f school
