@@ -2,7 +2,7 @@ CC=gcc
 SRC=*.c
 OBJ=*.o
 NAME= school
-RM=rm -f
+RM= rm -f
 CFLAGS= -Wall -Werror -Wextra -pedantic
 
 all: $(NAME)
@@ -13,7 +13,9 @@ $(NAME): $(OBJ)
 clean:
 	$(RM) $(NAME)
 oclean:
-	$(RM) $(OBJ)                                              
+	$(RM) $(OBJ)
+
 fclean:
-	$(RM) $(NAME) $(OBJ) 
-~            
+	$(RM) $(OBJ) $(NAME)
+
+re: $(NAME)
