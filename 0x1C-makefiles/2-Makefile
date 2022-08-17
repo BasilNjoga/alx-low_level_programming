@@ -3,8 +3,13 @@ SRC=*.c
 OBJ=*.o
 all: school
 
-school: main.c school.c
-	$(CC) $(SRC) -o school
+school: $(OBJ)
+	$(CC) $(OBJ) -o school
 
+main.o: main.c
+	gcc -c main.c -o main.o
+
+school.o: school.c
+	gcc -c school.c -o school.o
 clean:
 	rm -f school
