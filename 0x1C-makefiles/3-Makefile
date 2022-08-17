@@ -10,3 +10,10 @@ $(NAME): $(OBJ)
 
 clean:
 	rm -f *.o $(NAME)
+oclean:
+	rm -f *.o
+
+fclean:
+	rm -f *.o $(NAME)
+
+re: $(NAME)
