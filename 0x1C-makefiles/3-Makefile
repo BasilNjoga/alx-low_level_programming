@@ -9,8 +9,4 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	rm -f *.o school
-oclean:
-	rm -f *.o                                          
-fclean:
-	rm -f *.o school
+	rm -f *.o $(NAME)
