@@ -2,6 +2,7 @@ CC=gcc
 SRC=*.c
 OBJ=*.o
 NAME= school
+RM= rm -f
 
 all: $(NAME)
 
@@ -9,11 +10,11 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	rm -f *.o $(NAME)
+	$(RM) $(NAME)
 oclean:
-	rm -f *.o
+	$(RM) *.o
 
 fclean:
-	rm -f *.o $(NAME)
+	$(RM) *.o $(NAME)
 
 re: $(NAME)
