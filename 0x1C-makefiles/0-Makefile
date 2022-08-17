@@ -1,9 +1,3 @@
-# variable cc will be the compiler to use
-CC=gcc
-
-# the .c files to be executed
-SRC=main.c school.c
-
 all:school
 
 school: main.c school.c
