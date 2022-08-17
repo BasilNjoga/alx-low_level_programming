@@ -10,8 +10,8 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) $(NAME)
+	rm -f *.o school
 oclean:
-	$(RM) $(OBJ)                                                
+	rm -f *.o                                          
 fclean:
-	$(RM) $(OBJ) $(NAME)
+	rm -f *.o school
