@@ -13,4 +13,11 @@ OBJ=*.o
 all:school
 
 school: main.c school.c
-	$(CC) $(SRC) $(OBJ) -o school 
+	$(CC) $(SRC) $(OBJ) -o school
+
+
+main.o: main.c
+	gcc -c main.c -o main.o
+
+school.o: school.c
+	gcc -c school.c -o schoo.o
