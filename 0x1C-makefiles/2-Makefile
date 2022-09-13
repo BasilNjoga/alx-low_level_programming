@@ -1,5 +1,5 @@
 CC=gcc
-SRC=*.c
+SRC=main.c school.c
 OBJ=*.o
 NAME= school
 
@@ -9,4 +9,4 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	rm -f *.o $(NAME)
+	rm -f $(OBJ) $(NAME)
