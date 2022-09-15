@@ -7,19 +7,23 @@
  *
  * @head: list to be checked
  * @index: index of node to be gotter
- * 
- * @Return: dlistint_t* 
+ *
+ * Return: *dlistint
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-    unsigned int i;
+	unsigned int i;
 
-    i = 0;
-    while (i != index)
-    {
-        head = head->next;
-        i++;
-    }
-    return head;
+	i = 0;
+	while (i != index)
+	{
+		head = head->next;
+		if (head->next == NULL)
+		{
+			return (NULL);
+		}
+		i++;
+	}
+	return (head);
 }
