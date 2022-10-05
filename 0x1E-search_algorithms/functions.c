@@ -1,4 +1,8 @@
-int my_floor (int a) {
+#include <stdio.h>
+
+/*
+int main(void) {
+    a = 4.5
 if ( (a * 10) % 10 == 0)
 {
     return (a);
@@ -6,4 +10,4 @@ if ( (a * 10) % 10 == 0)
 else {
     return (a - 0.5) ;
 }
-}
+} */
