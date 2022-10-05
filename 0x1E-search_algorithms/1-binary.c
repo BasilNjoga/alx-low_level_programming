@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
 #include "search_algos.h"
 
@@ -24,25 +24,27 @@ int binary_search(int *array, size_t size, int value)
 	}
 	r = size - 1;
 	l = 0;
-	while (l <= r)
+	while (l < r)
 	{
 		mid = floor((l + r) / 2);
 		printf("Searching in array:");
-		for (j = l; j < r ; j++)
+		for (j = l; j < r; j++)
 		{
-			printf("%ld", array[j]);
+			printf(" %d,", array[j]);
 		}
+		printf(" %d\n", array[r]);
+		
 		if (value == array[mid])
 		{
 			return (mid);
 		}
 		else if (value < array[mid])
 		{
-			l = mid - 1;
+			r = mid - 1;
 		}
 		else
 		{
-			r = mid + 1;
+			l = mid + 1;
 		}
 	}
 	return (-1);
