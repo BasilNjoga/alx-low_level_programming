@@ -23,7 +23,7 @@ int binary_search(int *array, size_t size, int value)
 	}
 	r = size - 1;
 	l = 0;
-	while (l < r)
+	while (l <= r)
 	{
 		div = ((l + r) / 2);
 		if (((div * 10) % 10) == 0)
