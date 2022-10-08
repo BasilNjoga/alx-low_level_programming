@@ -32,7 +32,7 @@ int binary_search(int *array, size_t size, int value)
 		{
 			printf(" %d,", array[j]);
 		}
-		printf(" %d\n", array[r]);		
+		printf(" %d\n", array[r]);
 		if (value == array[mid])
 		{
 			return (mid);
@@ -50,22 +50,23 @@ int binary_search(int *array, size_t size, int value)
 }
 /**
  * return_mid - returns the floor of a given value
- * 
+ *
  * @div: integer value
- * 
+ *
  * Return: The floor
  */
 
-int return_mid (int div)
+int return_mid(int div)
 {
 	int mid;
 
 	if (((div * 10) % 10) == 0)
-		{
-			mid = div;
-		}
-		else {
-			mid = (div - 0.5);
-		}
-		return mid; 
+	{
+		mid = div;
+	}
+	else
+	{
+		mid = (div - 0.5);
+	}
+	return (mid);
 }
