@@ -10,27 +10,7 @@
  *
  * Return: int
  */
-/**
- * return_mid - returns the floor of a given value
- * 
- * @div: integer value
- * 
- * Return: The floor
- */
 
-int return_mid (int div)
-{
-	int mid;
-
-	if (((div * 10) % 10) == 0)
-		{
-			mid = div;
-		}
-		else {
-			mid = (div - 0.5);
-		}
-		return mid; 
-}
 int binary_search(int *array, size_t size, int value)
 {
 	size_t l, j;
@@ -67,4 +47,25 @@ int binary_search(int *array, size_t size, int value)
 		}
 	}
 	return (-1);
+}
+/**
+ * return_mid - returns the floor of a given value
+ * 
+ * @div: integer value
+ * 
+ * Return: The floor
+ */
+
+int return_mid (int div)
+{
+	int mid;
+
+	if (((div * 10) % 10) == 0)
+		{
+			mid = div;
+		}
+		else {
+			mid = (div - 0.5);
+		}
+		return mid; 
 }
