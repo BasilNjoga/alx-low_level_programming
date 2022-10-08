@@ -29,7 +29,7 @@ int return_mid (int div)
 		else {
 			mid = (div - 0.5);
 		}
-		return mid;
+		return mid; 
 }
 int binary_search(int *array, size_t size, int value)
 {
