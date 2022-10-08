@@ -1,5 +1,27 @@
 #include <stdio.h>
 #include "search_algos.h"
+/**
+ * return_mid - returns the floor of a given value
+ *
+ * @div: integer value
+ *
+ * Return: The floor
+ */
+
+int return_mid(int div)
+{
+	int mid;
+
+	if (((div * 10) % 10) == 0)
+	{
+		mid = div;
+	}
+	else
+	{
+		mid = (div - 0.5);
+	}
+	return (mid);
+}
 
 /**
  * binary_search - This function perfoms a binary search
@@ -47,26 +69,4 @@ int binary_search(int *array, size_t size, int value)
 		}
 	}
 	return (-1);
-}
-/**
- * return_mid - returns the floor of a given value
- *
- * @div: integer value
- *
- * Return: The floor
- */
-
-int return_mid(int div)
-{
-	int mid;
-
-	if (((div * 10) % 10) == 0)
-	{
-		mid = div;
-	}
-	else
-	{
-		mid = (div - 0.5);
-	}
-	return (mid);
 }
