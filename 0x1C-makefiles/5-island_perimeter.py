@@ -1,12 +1,26 @@
 #!/usr/bin/python3
-""" This is a module that computes the perimeter of an
-island given a grid which is a list of integers"""
+"""Defines an island perimeter measuring function."""
 
 
 def island_perimeter(grid):
-    """ This is the function that loops throught the matrix list """
-    x = 0
-    for i in range(len(grid)):
-        for j in range(len(grid[i])):
-            x += grid[i][j]
-    return (x + 1) * 2
+    """Return the perimiter of an island.
+    The grid represents water by 0 and land by 1.
+    Args:
+        grid (list): A list of list of integers representing an island.
+    Returns:
+        The perimeter of the island defined in grid.
+    """
+    width = len(grid[0])
+    height = len(grid)
+    edges = 0
+    size = 0
+
+    for i in range(height):
+        for j in range(width):
+            if grid[i][j] == 1:
+                size += 1
+                if (j > 0 and grid[i][j - 1] == 1):
+                    edges += 1
+                if (i > 0 and grid[i - 1][j] == 1):
+                    edges += 1
+    return size * 4 - edges * 2
